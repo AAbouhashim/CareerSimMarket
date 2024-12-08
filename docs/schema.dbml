@@ -1,0 +1,25 @@
+Table User {
+  id        Int     [pk, increment]
+  username  String  [unique]
+  password  String
+  orders    Order[]
+}
+
+Table Order {
+  id        Int     [pk, increment]
+  date      String
+  note      String
+  customer  User
+  items     Product[]
+}
+
+Table Product {
+  id          Int [pk, increment]
+  title       String
+  description String
+  price       Decimal
+  orders      Order[]
+}
+
+Ref: User.orders < Order.customer
+Ref: Order.items <> Product.orders

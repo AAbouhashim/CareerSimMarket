@@ -1,0 +1,14 @@
+{
+  "name": "40-market",
+  "version": "1.0.0",
+  "description": "Market is our latest e-commerce platform that will allow users to browse and purchase a wide selection of products.",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
